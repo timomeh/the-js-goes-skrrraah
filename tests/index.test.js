@@ -1,12 +1,16 @@
 require('../src')
 
 it('throws skrrraah error', () => {
-  expect(() => {
-    try {
-      let foo
-      foo.bar = 'baz'
-    } catch (error) {
-      window.onerror(null, null, null, null, error)
-    }
-  }).toThrowError(new Error('The Ting goes skrrraah!'))
+  const spy = jest.spyOn(window, 'onerror')
+  let err
+
+  try {
+    let foo
+    foo.bar = 'baz'
+  } catch (error) {
+    err = window.onerror(null, null, null, null, error)
+  }
+
+  expect(spy).toHaveBeenCalled()
+  expect(err).toEqual(new TypeError('The Ting goes skrrraah!'))
 })

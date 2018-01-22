@@ -32,7 +32,8 @@ require('the-js-goes-skrrraah')
 
 - 100% Test Coverage
 - JS Standard Code Style
-- No dependencies!
+- No dependencies
+- 105 bytes gzipped!
 
 ## LICENSE
 
