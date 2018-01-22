@@ -1,0 +1,30 @@
+{
+  "name": "the-js-goes-skrrraah",
+  "version": "1.0.0",
+  "description": "Get to know when the ting goes skrrraah",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint src && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/timomeh/the-js-goes-skrrraah.git"
+  },
+  "author": "Timo Mämecke <maemecketimo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timomeh/the-js-goes-skrrraah/issues"
+  },
+  "homepage": "https://github.com/timomeh/the-js-goes-skrrraah#readme",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
+  }
+}

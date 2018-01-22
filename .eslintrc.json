@@ -1,0 +1,17 @@
+{
+  "extends": "standard",
+  "plugins": ["jest"],
+  "env": {
+    "es6": true,
+    "jest/globals": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "globalReturn": false,
+      "jsx": true
+    }
+  }
+}
